@@ -6,16 +6,25 @@ Analyzing standardized testing data using Pandas and Jupyter
 
 In this analysis, we were tasked with finding metrics for a school district's performance based on a number of factors. We were able to sort our data by grade, school, and spending through the use of the pandas dependency for python. We were able to break down the data further to look at one school, Thomas High School, that was having trouble with suspected cheating and were able to remove the potential bad data that could have skewed the analysis.
 
-### What the data shows us.
-
 ##### Election Results List
 - How is the district summary affected?
+ 
+ - By removing the 9th grade scores from Thomas High School from the overall data, we see a .9% decrease in the overall passing percentage, a .1 point drop in the average math score, a .2% drop in the percentage of students passing math, and a .3% drop in the percentage of students passing reading. The rest of the data remains unaffected.
+
 - How is the school summary affected?
-- How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+  - After removing the bad data from Thomas High School, we found that Thomas High School is still the second highest perfroming school overall in the district. It should be kept in mind that the true 9th grade scores could potentially have brought down Thomas High School. More data is required.
+   
 - How does replacing the ninth-grade scores affect the following:
-- Math and reading scores by grade
-- Scores by school spending
-- Scores by school size
-Scores by school type
-### Election-Audit Summary
+  - Math and reading scores by grade- The math and reading scores are unaffected except for the null value in 9th grade for Thomas High School.
+ 
+ - Scores by school spending - For schools with per student spending between $630 and $644 math averages went down by .01 points, reading averages went up by .01 points, the passing math percentage went down by .02%, the passing reading percentage went up by .02%, and the overall passing went down by .08%.
+ 
+ - Scores by school size - For medium sized schools math averages went down by .01 points, reading averages went up by .01 points, the passing math percentage went down by .01%, the passing reading percentage went up by .06%, and the overall passing went down by .07%.
+ 
+ - Scores by school type - For charter schools math averages went down by .05 points, reading averages went up by .01 points, the passing math percentage went up by .01%, the 
+passing reading percentage down by .03%, and the overall passing went down by .04%.
+
+### School District Analysis Summary
+
+While the changes might seem small on paper, with so many students, small percentages can indicate large changes in how we percieve the data. Overall, math averages went down, reading averages went up, passing math percentages were went a full .02% down. Passing reading percentages went down by .03% and the overall percentage went down by almost a full percent. I believe this data shows enough variance that this analysis needs to be re-examined after the ninth graders of Thomas High School have been either given a re-test or further investigation into the academic dishonesty has been performed.
 
